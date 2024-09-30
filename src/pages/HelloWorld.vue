@@ -7,6 +7,7 @@
   <div class="q-pa-md example-row-all-breakpoints">
     <div class="row">
       <div class="col">
+        <!--First Card-->
         <q-card dark bordered class="bg-grey-9 my-card">
           <q-card-section>
             <div class="text-h6">scss</div>
@@ -20,7 +21,7 @@
   width: 100%;
   max-width: 250px;
   }
-        </code></pre>
+            </code></pre>
             </div>
           </q-card-section>
 
@@ -28,13 +29,14 @@
         </q-card>
       </div>
       <div class="col">
+        <!--Second Card-->
         <q-card flat bordered class="my-card">
           <q-card-section>
             <div class="text-h6">sass</div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            <pre><code>
+            <pre v-pre><code>
 .hello-world
   text-align: center
   margin-top: 50px
@@ -97,15 +99,15 @@
 export default {
   name: "HelloWorld",
   setup() {
-    // goToUrl 함수 추가
+    // goQCard
     function goQCard() {
-      window.location.href = "https://quasar.dev/vue-components/card"; // 클릭 시 이동할 URL
+      window.location.href = "https://quasar.dev/vue-components/card";
     }
 
     return {
       lorem:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      goQCard, //함수를 반환하여 템플릿에서 사용 가능하게 함
+      goQCard,
     };
   },
 };

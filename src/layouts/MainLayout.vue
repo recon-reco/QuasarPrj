@@ -116,6 +116,12 @@ defineOptions({
 
 const linksList = [
   {
+    title: "HelloWorld",
+    caption: "HelloQuasar",
+    icon: "settings",
+    link: "http://127.0.0.1:9000/#/hello",
+  },
+  {
     title: "MySimpleBlog",
     caption: "Python&Django",
     icon: "school",
